@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+        <title>Home CF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*CSS*/
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                font-family: Helvetica, sans-serif;
+                background-color: #f4f4f4;
+            }
+
+            header {
+                text-align: center;
+                background: #000000;
+                color: #fff;
+                padding: 10px 0;
+            }
+
+            header img {
+                width: 100px;
+            }
+
+            form {
+                line-height: 2.0;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                background: #191970;
+                color: #fff;
+                padding: 0;
+                height: 60px;
+            }
+
+            .menu {
+                display: flex;
+            }
+
+            .menu a {
+                color: #fff;
+                text-decoration: none;
+                padding: 0 15px;
+                text-align: center;
+                transition: background-color 0.3s, color 0.3s;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+
+            .menu a:hover {
+                background-color: #e78e31;
+                color: #ffffff;
+            }
+
+            .search {
+                display: flex;
+                align-items: center;
+            }
+
+            .search input[type="text"] {
+                padding: 5px;
+            }
+
+            .search button {
+                padding: 5px;
+                background-color: #e78e31;
+                color: #ffffff;
+                border: none;
+            }
+
+            .container {
+                display: flex;
+                padding: 20px;
+                flex:1;
+            }
+
+            .main {
+                width: 60%;
+                padding-right: 20px;
+            }
+
+            .aside {
+                width: 40%;
+                background: #eee;
+                padding: 20px;
+            }
+
+            .aside button{
+                background-color: #e78e31;
+                color: #ffffff;
+            }
+
+            footer {
+                text-align: center;
+                background: #333;
+                color: #fff;
+                padding: 10px 0;
+                width: 100%;
+                margin-top: auto;
+            }
+
+            .submit-btn {
+                background-color: green;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .submit-btn:hover {
+                background-color: darkgreen;
+            }
+
+            .reset-btn {
+                background-color: gray;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .reset-btn:hover {
+                background-color: darkgray;
+            }
+            
+            .standard-img{
+                width: 190px;
+                height: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="images/logoCF.png" alt="Computer Force Logo">
+        </header>
+        <nav>  
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="register.html">Register</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main">
+                <h1>Welcome to Computer Force</h1>
+                <p>Computer Force is your online expert in all things computing.</p>
+                <h2>Computers</h2>
+                <img src="images/computers.jpg" alt="Computers"  class="standard-img">
+                <h2>Laptops</h2>
+                <img src="images/laptops.jpg" alt="Laptops"  class="standard-img">
+                <h2>Monitors</h2>
+                <img src="images/monitors.jpg" alt="Monitors"  class="standard-img">
+                <h2>Printing & Scanning</h2>
+                <img src="images/printingScanning.jpg" alt="Printing & Scanning"  class="standard-img">
+                <h2>Software</h2>
+                <img src="images/software.jpg" alt="Software"  class="standard-img">
+                <h2>Tablets</h2>
+                <img src="images/tablets.jpg" alt="Tablets"  class="standard-img">
+            </div>
+            <aside class="aside">
+                <h2>Purchases</h2>
+                <table>
+                    <tr>
+                        <td>0 items.</td>
+                        <td>Cart sub-total: $0.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button>Go to Checkout</button></td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+        <footer>
+            &copy; 2024 Nicolle Costa
+        </footer>
+    </body>
+</html>
